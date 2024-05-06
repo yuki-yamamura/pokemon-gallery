@@ -1,4 +1,5 @@
 // import type { Pokemon } from '@/features/pokemon/types/Pokemon';
+import Tag from './Tag';
 import fs from 'fs/promises';
 import path from 'path';
 
@@ -32,7 +33,7 @@ const Card = async ({ id }: Props) => {
         <ul className={styles.abilities}>
           {pokemon.abilities.map(({ ability }) => (
             <li key={ability.name} className={styles.ability}>
-              {ability.name}
+              <Tag>{ability.name}</Tag>
             </li>
           ))}
         </ul>

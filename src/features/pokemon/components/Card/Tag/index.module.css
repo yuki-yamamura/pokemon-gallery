@@ -1,5 +1,10 @@
-@container card-container (max-width: 320px) {
-  .module {
-    size: 1.25rem;
+.module {
+  padding-inline: 1rem;
+  color: white;
+  background-color: coral;
+  border-radius: 6px;
+
+  @container card-container (width < 500px) {
+    background-color: green;
   }
 }
