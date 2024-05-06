@@ -1,6 +1,8 @@
 .module {
-  container-name: card-container;
-  container-type: inline-size;
+  /* container-name: card-container;
+  container-type: inline-size; */
+
+  container: card-container / size;
 }
 
 .name {
