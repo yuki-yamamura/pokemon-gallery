@@ -2,3 +2,25 @@
   container-name: card-container;
   container-type: inline-size;
 }
+
+.name {
+  font-size: 1rem;
+
+  @container card-container (500px < width) {
+    font-size: 1.5rem;
+  }
+}
+
+.abilities {
+  display: flex;
+  column-gap: 1rem;
+  justify-content: space-evenly;
+
+  @container card-container (width < 500px ) {
+    width: 50%;
+  }
+}
+
+.ability {
+  list-style: none;
+}
