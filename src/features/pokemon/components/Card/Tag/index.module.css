@@ -1,0 +1,5 @@
+@container card-container (max-width: 320px) {
+  .module {
+    size: 1.25rem;
+  }
+}
