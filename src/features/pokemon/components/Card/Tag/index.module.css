@@ -1,10 +1,10 @@
 .module {
   padding-inline: 1rem;
   color: white;
-  background-color: coral;
+  background-color: var(--coral);
   border-radius: 6px;
+}
 
-  @container card-container (width < 500px) {
-    background-color: green;
-  }
+.module[data-color='cornflowerblue'] {
+  background-color: var(--cornflowerblue);
 }

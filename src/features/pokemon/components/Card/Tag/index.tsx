@@ -1,9 +1,13 @@
-type Props = React.PropsWithChildren;
+type Props = React.PropsWithChildren<{
+  color: 'coral' | 'cornflowerblue';
+}>;
 
 import styles from './index.module.css';
 
-const Tag = ({ children }: Props) => (
-  <div className={styles.module}>{children}</div>
+const Tag = ({ color, children }: Props) => (
+  <div data-color={color} className={styles.module}>
+    {children}
+  </div>
 );
 
 export default Tag;
