@@ -1,4 +1,7 @@
 .module {
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
   padding-inline: 1rem;
   color: white;
   background-color: var(--coral);
@@ -7,4 +10,10 @@
 
 .module[data-color='cornflowerblue'] {
   background-color: var(--cornflowerblue);
+}
+
+.image {
+  @container card (395px < width) {
+    display: none;
+  }
 }
