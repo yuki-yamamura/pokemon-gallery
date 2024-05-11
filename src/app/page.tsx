@@ -4,8 +4,8 @@ import styles from './index.module.scss';
 
 const Home = () => {
   return (
-    <main className={styles.main}>
-      <h1>Hello, World!</h1>
+    <main>
+      <h1 className={styles.heading}>Pokemon Gallery</h1>
       <Gallery />
     </main>
   );

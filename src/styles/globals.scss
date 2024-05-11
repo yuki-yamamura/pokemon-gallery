@@ -1,4 +1,5 @@
 :root {
+  --accent: red;
   --card-foreground: #00000080;
   --coral: coral;
   --cornflowerblue: cornflowerblue;
@@ -16,5 +17,10 @@
 }
 
 body {
+  // max-width: 1440px;
+  padding: clamp(0.25rem, 4cqi, 10rem);
+  margin-block: 10rem;
+
+  // margin-inline: auto;
   line-height: 1.5;
 }
